@@ -1,0 +1,157 @@
+/* Shared print stylesheet for the flea-market booth pack.
+   Letter-size pages, print margins, big readable type, no web fonts. */
+
+@page {
+  size: Letter;
+  margin: 0.5in;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #111;
+  line-height: 1.3;
+}
+
+/* ---------- Headers & footers ---------- */
+
+.sheet-title {
+  font-size: 22pt;
+  font-weight: 700;
+  letter-spacing: 0.5pt;
+  margin-bottom: 2pt;
+}
+
+.sheet-subtitle {
+  font-size: 10pt;
+  color: #333;
+  margin-bottom: 10pt;
+}
+
+.rule {
+  border-top: 2pt solid #111;
+  margin-bottom: 10pt;
+}
+
+/* ---------- Tables & logs ---------- */
+
+table.log {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11pt;
+}
+
+table.log th,
+table.log td {
+  border: 1pt solid #333;
+  padding: 6pt 8pt;
+  text-align: left;
+}
+
+table.log th {
+  background: #eee;
+  font-weight: 700;
+}
+
+.tallied {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* ---------- Checklists ---------- */
+
+ul.checklist {
+  list-style: none;
+  font-size: 13pt;
+}
+
+ul.checklist li {
+  margin-bottom: 7pt;
+  padding-left: 26pt;
+  position: relative;
+}
+
+ul.checklist li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1pt;
+  width: 14pt;
+  height: 14pt;
+  border: 1.5pt solid #111;
+}
+
+.box-row {
+  display: flex;
+  align-items: center;
+  gap: 10pt;
+  margin-bottom: 8pt;
+  font-size: 13pt;
+}
+
+.box {
+  width: 16pt;
+  height: 16pt;
+  border: 1.5pt solid #111;
+  flex: 0 0 auto;
+}
+
+/* ---------- Big display blocks (signs, zones) ---------- */
+
+.big {
+  font-size: 90pt;
+  font-weight: 700;
+  text-align: center;
+}
+
+.display {
+  font-weight: 700;
+  text-align: center;
+}
+
+/* ---------- Fill-in lines ---------- */
+
+.line {
+  border-bottom: 1pt solid #333;
+  display: inline-block;
+  min-width: 120pt;
+}
+
+.line-w {
+  display: block;
+  border-bottom: 1pt solid #333;
+  height: 18pt;
+}
+
+/* ---------- Grids (stickers, tickets, zones) ---------- */
+
+.grid {
+  display: grid;
+  gap: 6pt;
+}
+
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+.grid-6 { grid-template-columns: repeat(6, 1fr); }
+.grid-8 { grid-template-columns: repeat(8, 1fr); }
+
+.cell {
+  border: 1pt solid #333;
+  text-align: center;
+  padding: 4pt;
+  font-weight: 700;
+}
+
+/* ---------- Page breaks & helper classes ---------- */
+
+.page-break { break-after: page; }
+.avoid-break { break-inside: avoid; }
+
+.muted { color: #555; }
+.center { text-align: center; }
+.small { font-size: 9pt; }
+.tiny { font-size: 7.5pt; }
+.nowrap { white-space: nowrap; }

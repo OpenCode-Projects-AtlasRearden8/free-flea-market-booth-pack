@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Blanket Layout Map</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+  .zone {
+    border: 2pt solid #111;
+    border-radius: 4pt;
+    padding: 6pt;
+    font-weight: 700;
+    font-size: 13pt;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .zone .note { font-size: 8.5pt; font-weight: 400; color: #333; margin-top: 3pt; }
+  .map {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1.1fr 1fr 1fr 0.7fr;
+    gap: 5pt;
+    height: 5.6in;
+  }
+  .blanket { outline: 1.5pt dashed #555; outline-offset: -22pt; }
+  .till { border-width: 3pt; border-style: double; }
+  .front { grid-column: 1 / 7; border: 1.5pt solid #333; text-align: center; padding-top: 4pt; font-size: 11pt; }
+  .arrow { font-size: 22pt; }
+</style>
+</head>
+<body>
+  <div class="sheet-title">BLANKET LAYOUT MAP</div>
+  <div class="sheet-subtitle">Sketch your blanket or table stops before load-in. Front = aisle where shoppers walk. Idea: heavy items back, smalls front, till in the corner nearest you.</div>
+  <div class="rule"></div>
+
+  <div class="map">
+    <div class="zone blanket" style="grid-column: 1 / 5; grid-row: 1;">ZONE A — YOUR BLANKET<br><span class="note">draw the outline you have: blanket, table, or canopy</span></div>
+    <div class="zone till" style="grid-column: 5 / 7; grid-row: 1;">CASH &amp; TILL<br><span class="note">money bag, change, tally log, pens</span></div>
+    <div class="zone" style="grid-column: 1 / 2; grid-row: 2;" >TOOLS<br><span class="note">hardware, garden</span></div>
+    <div class="zone" style="grid-column: 2 / 3; grid-row: 2;">ELECTRONICS<br><span class="note">corded, tested</span></div>
+    <div class="zone" style="grid-column: 3 / 4; grid-row: 2;">KIDS &amp; TOYS<br><span class="note">no small parts loose</span></div>
+    <div class="zone" style="grid-column: 4 / 5; grid-row: 2;">HOUSEWARES<br><span class="note">glass front &amp; up</span></div>
+    <div class="zone" style="grid-column: 5 / 6; grid-row: 2;">CLOTHES<br><span class="note">size-tag showing</span></div>
+    <div class="zone" style="grid-column: 6 / 7; grid-row: 2;">BOX LOT<br><span class="note">one price fills it</span></div>
+    <div class="zone" style="grid-column: 1 / 4; grid-row: 3;">EMPTIES / RESTOCK TUB<br><span class="note">sold-til-empty space stays tidy; keep boxes flat</span></div>
+    <div class="zone" style="grid-column: 4 / 7; grid-row: 3;">BAGS &amp; WRAP<br><span class="note">grocery bags, newspaper, tape — reach without standing</span></div>
+    <div class="front" style="grid-row: 4;">AISLE SIDE (shopper traffic) <span class="arrow">&#8593;</span> big price signs here &mdash; one per edge of the blanket</div>
+  </div>
+
+  <div style="margin-top: 12pt;" class="small">
+    <strong>Pick your price signs today, not at the fair:</strong>
+    1. Every item gets one sticker &mdash; tag it at home.
+    2. Fill the front with the easiest-to-read sign ($1, $5, everything-on-edge).
+    3. Sit behind the till, never on top of the blanket.
+    4. Anything you must keep dry or safe = one labeled tub, lid on.
+  </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cash Tally Log</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+  .tally-note { font-size: 9pt; color: #333; margin-bottom: 6pt; }
+  .sumgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12pt;
+    margin-top: 10pt;
+    break-inside: avoid;
+  }
+  .sumcard { border: 1.5pt solid #111; padding: 8pt; font-size: 10pt; }
+  .sumcard h3 { font-size: 11pt; margin-bottom: 6pt; }
+  .sumline { display: flex; justify-content: space-between; border-bottom: 0.5pt solid #999; height: 16pt; align-items: flex-end; }
+  .sumline span:last-child { min-width: 56pt; text-align: right; border-bottom: 1pt solid #333; }
+  .foot { margin-top: 8pt; font-size: 9pt; }
+</style>
+</head>
+<body>
+  <div class="sheet-title">CASH TALLY LOG</div>
+  <div class="sheet-subtitle">One line per sale. Write it down even when it is slow &mdash; the log is your proof when you count at the end. Keep it in the till under the money.</div>
+  <div class="rule"></div>
+
+  <table class="log tallied">
+    <thead>
+      <tr>
+        <th style="width: 9%;">Time</th>
+        <th style="width: 34%;">Items sold</th>
+        <th style="width: 12%;">Cash</th>
+        <th style="width: 12%;">Card/QR</th>
+        <th style="width: 12%;">Running</th>
+        <th style="width: 21%;">Notes (haggle, held items)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    </tbody>
+  </table>
+
+  <div class="sumgrid">
+    <div class="sumcard">
+      <h3>END-OF-DAY COUNT &mdash; CASH</h3>
+      <div class="sumline"><span>Counted at booth, closing</span><span>$</span></div>
+      <div class="sumline"><span>Minus starting float</span><span>$</span></div>
+      <div class="sumline"><span>Total cash taken</span><span>$</span></div>
+      <div class="sumline"><span>Tally log total for cash</span><span>$</span></div>
+      <div class="sumline"><span>Difference (explain in notes)</span><span>$</span></div>
+      <div style="margin-top:6pt;">Expenses/runs (coffee, change run): <span class="line" style="min-width: 80pt;"></span></div>
+      <div>Vehicle/parking costs: <span class="line" style="min-width: 80pt;"></span></div>
+      <div style="margin-top:6pt;">Landed profit: <strong>$ ________________</strong></div>
+    </div>
+    <div class="sumcard">
+      <h3>SECURITY &amp; SPLIT-UP RULES</h3>
+      <div class="box-row"><span class="box"></span> Nothing over $20 stays in the open till &mdash; into money bag.</div>
+      <div class="box-row"><span class="box"></span> Bag zipped and tucked under the chair, never on the table.</div>
+      <div class="box-row"><span class="box"></span> No bills shown on the table when a &ldquo;looker&rdquo; leans in.</div>
+      <div class="box-row"><span class="box"></span> Partner leaves? Move the bag with them or zip it in the car.</div>
+      <div style="margin-top:8pt;"><strong>Landing the day:</strong><br>
+      Cash to <span class="line" style="min-width: 90pt;"></span> &nbsp; Log filed with <span class="line" style="min-width: 70pt;"></span></div>
+    </div>
+  </div>
+</body>
+</html>

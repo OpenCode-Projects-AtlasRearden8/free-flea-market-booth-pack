@@ -1,0 +1,5 @@
+# Generated PDFs are build artifacts; run `python3 build.py` to make them.
+printables/
+__pycache__/
+*.pyc
+.pytest_cache/

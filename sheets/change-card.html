@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Change Counting Card</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+  .floatline { font-size: 13pt; margin-bottom: 8pt; }
+  .floatline .val { display: inline-block; min-width: 110pt; border-bottom: 1pt solid #333; text-align: center; font-weight: 700; }
+  table.change {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11pt;
+    font-family: "Courier New", Courier, monospace;
+  }
+  table.change th, table.change td {
+    border: 1pt solid #333;
+    padding: 5pt 7pt;
+    text-align: center;
+  }
+  table.change td:first-child, table.change th:first-child {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    text-align: left;
+  }
+  table.change tr:nth-child(even) td { background: #f2f2f2; }
+  .workarea {
+    margin-top: 10pt;
+    border: 1.5pt solid #111;
+    padding: 8pt;
+    font-size: 10pt;
+    break-inside: avoid;
+  }
+  .workarea h3 { font-size: 12pt; margin-bottom: 5pt; }
+  .big-rule { border-bottom: 1pt solid #333; height: 22pt; }
+  .quick {
+    margin-top: 10pt;
+    font-size: 10.5pt;
+    border: 1.5pt solid #111;
+    padding: 8pt;
+    break-inside: avoid;
+  }
+  .quick div { margin-bottom: 4pt; }
+</style>
+</head>
+<body>
+  <div class="sheet-title">CHANGE-COUNTING CARD</div>
+  <div class="sheet-subtitle">How much of each bill and coin you bring, what it adds up to, and a math helper for the till. Sit this inside the cash box lid.</div>
+  <div class="rule"></div>
+
+  <div class="floatline">Starting float: <span class="val">&nbsp;</span> = <span class="val">&nbsp;</span> coins / bills per column checked below</div>
+
+  <table class="change">
+    <thead>
+      <tr>
+        <th style="width: 16%;">Denomination</th>
+        <th>Qty you bring &rarr; counts like this</th>
+        <th>Value</th>
+        <th>Qty you bring &rarr; counts like this</th>
+        <th>Value</th>
+        <th>Total value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>$20 bills</td><td>5</td><td>$100</td><td>1</td><td>$20</td><td>$______</td></tr>
+      <tr><td>$10 bills</td><td>5</td><td>$50</td><td>1</td><td>$10</td><td>$______</td></tr>
+      <tr><td>$5 bills</td><td>5</td><td>$25</td><td>1</td><td>$5</td><td>$______</td></tr>
+      <tr><td>$1 bills</td><td>10</td><td>$10</td><td>1</td><td>$1</td><td>$______</td></tr>
+      <tr><td>Quarters (25&cent;)</td><td>4</td><td>$1</td><td>40 = roll</td><td>$10</td><td>$______</td></tr>
+      <tr><td>Dimes (10&cent;)</td><td>5</td><td>$0.50</td><td>50 = roll</td><td>$5</td><td>$______</td></tr>
+      <tr><td>Nickels (5&cent;)</td><td>2</td><td>$0.10</td><td>40 = roll</td><td>$2</td><td>$______</td></tr>
+      <tr><td>Pennies (1&cent;)</td><td>5</td><td>$0.05</td><td>50 = roll</td><td>$0.50</td><td>$______</td></tr>
+      <tr><td><strong>FLOAT TOTAL</strong></td><td colspan="2" style="text-align:left;">typical beginner float: $60&ndash;$80</td><td colspan="2"></td><td><strong>$______</strong></td></tr>
+    </tbody>
+  </table>
+
+  <div class="workarea">
+    <h3>Scratch space (keep the arithmetic out of your head)</h3>
+    <div class="big-rule"></div>
+    <div class="big-rule"></div>
+    <div class="big-rule"></div>
+  </div>
+
+  <div class="quick">
+    <strong>Quick change formulas</strong> (lid arithmetic &mdash; price minus cash given = change back)
+    <div>Customer pays $10 for $8 item &rarr; $2 back &nbsp;&bull;&nbsp; pays $20 for $8 &rarr; $12 back &nbsp;&bull;&nbsp; pays $5 for $3.50 &rarr; $1.50 back</div>
+    <div>Break a $5: &nbsp; $1 &times; 4 + $1 coin &nbsp;&bull;&nbsp; Break a $10: &nbsp; $5 + $5 &nbsp;&bull;&nbsp; Break a $20: &nbsp; $10 + $10</div>
+    <div>Never hand coins into the &ldquo;what do I owe&rdquo; hand &mdash; say the change out loud, count it into their palm, and only then move on.</div>
+  </div>
+</body>
+</html>

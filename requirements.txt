@@ -1,0 +1,5 @@
+# Local build + test dependencies.
+# Install with: pip install -r requirements.txt
+weasyprint>=61
+pypdf>=4
+pytest>=7

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>"Sold" Ticket Stubs</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+  .sheet-subtitle .rules-line { font-size: 9.5pt; }
+  .twocol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10pt;
+  }
+  .stub {
+    border: 2pt solid #111;
+    border-radius: 4pt;
+    padding: 7pt 10pt 9pt;
+    break-inside: avoid;
+    min-height: 130pt;
+    display: flex;
+    flex-direction: column;
+  }
+  .stub .head {
+    font-size: 15pt;
+    font-weight: 700;
+    margin-bottom: 6pt;
+    white-space: nowrap;
+  }
+  .stub .head .no { font-weight: 400; }
+  .stub .lbl { font-size: 7.5pt; color: #444; }
+  .stub .fline {
+    display: block;
+    border-bottom: 1pt solid #333;
+    height: 14pt;
+    margin-top: 4pt;
+  }
+  .stub .divider {
+    border-top: 1.5pt dashed #555;
+    margin: 10pt 0 8pt;
+  }
+  .stub .foot { font-size: 9pt; }
+  .stub.hold { border-style: dashed; }
+  .tip {
+    margin-top: 10pt;
+    font-size: 9.5pt;
+    border: 1pt solid #333;
+    padding: 7pt;
+    break-inside: avoid;
+  }
+</style>
+</head>
+<body>
+  <div class="sheet-title">&ldquo;SOLD&rdquo; TICKET STUBS</div>
+  <div class="sheet-subtitle rules-line">Write one at the moment of sale: top half stays with the item booth-side, bottom half (past the dotted line) goes to the buyer for pickup.</div>
+  <div class="rule"></div>
+
+  <div class="twocol">
+    <div class="stub">
+      <div class="head">SOLD &#10004; <span class="no">No. 001</span></div>
+      <div><span class="lbl">ITEM</span><span class="fline"></span></div>
+      <div style="display: flex; gap: 12pt;">
+        <div style="flex: 1;"><span class="lbl">PRICE</span><span class="fline"></span></div>
+        <div style="flex: 1;"><span class="lbl">PAID</span><span class="fline"></span></div>
+      </div>
+      <div class="divider"></div>
+      <div class="foot"><span class="lbl">BUYER KEEPS THIS HALF</span><br>Show this stub at pickup &mdash; the item stays with the booth until this half comes back.</div>
+    </div>
+
+    <div class="stub">
+      <div class="head">SOLD &#10004; <span class="no">No. 002</span></div>
+      <div><span class="lbl">ITEM</span><span class="fline"></span></div>
+      <div style="display: flex; gap: 12pt;">
+        <div style="flex: 1;"><span class="lbl">PRICE</span><span class="fline"></span></div>
+        <div style="flex: 1;"><span class="lbl">PAID</span><span class="fline"></span></div>
+      </div>
+      <div class="divider"></div>
+      <div class="foot"><span class="lbl">BUYER KEEPS THIS HALF</span><br>Show this stub at pickup &mdash; the item stays with the booth until this half comes back.</div>
+    </div>
+
+    <div class="stub hold">
+      <div class="head">HELD &mdash; MARKED SOLD <span class="no">(buyer returning)</span></div>
+      <div><span class="lbl">ITEM / WHERE IT'S PARKED</span><span class="fline"></span></div>
+      <div style="display: flex; gap: 12pt;">
+        <div style="flex: 1;"><span class="lbl">AGREED PRICE</span><span class="fline"></span></div>
+        <div style="flex: 1;"><span class="lbl">BACK BY (TIME)</span><span class="fline"></span></div>
+      </div>
+      <div class="divider"></div>
+      <div class="foot">No return by the time above? Set the item back on the table &mdash; the hold is done.</div>
+    </div>
+
+    <div class="stub">
+      <div class="head">SOLD &#10004; <span class="no">No. 004</span></div>
+      <div><span class="lbl">ITEM</span><span class="fline"></span></div>
+      <div style="display: flex; gap: 12pt;">
+        <div style="flex: 1;"><span class="lbl">PRICE</span><span class="fline"></span></div>
+        <div style="flex: 1;"><span class="lbl">PAID</span><span class="fline"></span></div>
+      </div>
+      <div class="divider"></div>
+      <div class="foot"><span class="lbl">BUYER KEEPS THIS HALF</span><br>Show this stub at pickup &mdash; the item stays with the booth until this half comes back.</div>
+    </div>
+
+    <div class="stub">
+      <div class="head">SOLD &#10004; <span class="no">No. 005</span></div>
+      <div><span class="lbl">ITEM</span><span class="fline"></span></div>
+      <div style="display: flex; gap: 12pt;">
+        <div style="flex: 1;"><span class="lbl">PRICE</span><span class="fline"></span></div>
+        <div style="flex: 1;"><span class="lbl">PAID</span><span class="fline"></span></div>
+      </div>
+      <div class="divider"></div>
+      <div class="foot"><span class="lbl">BUYER KEEPS THIS HALF</span><br>Show this stub at pickup &mdash; the item stays with the booth until this half comes back.</div>
+    </div>
+
+    <div class="stub">
+      <div class="head">SOLD &#10004; <span class="no">No. 006</span></div>
+      <div><span class="lbl">ITEM</span><span class="fline"></span></div>
+      <div style="display: flex; gap: 12pt;">
+        <div style="flex: 1;"><span class="lbl">PRICE</span><span class="fline"></span></div>
+        <div style="flex: 1;"><span class="lbl">PAID</span><span class="fline"></span></div>
+      </div>
+      <div class="divider"></div>
+      <div class="foot"><span class="lbl">BUYER KEEPS THIS HALF</span><br>Show this stub at pickup &mdash; the item stays with the booth until this half comes back.</div>
+    </div>
+
+    <div class="stub">
+      <div class="head">SOLD &#10004; <span class="no">No. 007</span></div>
+      <div><span class="lbl">ITEM</span><span class="fline"></span></div>
+      <div style="display: flex; gap: 12pt;">
+        <div style="flex: 1;"><span class="lbl">PRICE</span><span class="fline"></span></div>
+        <div style="flex: 1;"><span class="lbl">PAID</span><span class="fline"></span></div>
+      </div>
+      <div class="divider"></div>
+      <div class="foot"><span class="lbl">BUYER KEEPS THIS HALF</span><br>Show this stub at pickup &mdash; the item stays with the booth until this half comes back.</div>
+    </div>
+
+    <div class="stub">
+      <div class="head">SOLD &#10004; <span class="no">No. 008</span></div>
+      <div><span class="lbl">ITEM</span><span class="fline"></span></div>
+      <div style="display: flex; gap: 12pt;">
+        <div style="flex: 1;"><span class="lbl">PRICE</span><span class="fline"></span></div>
+        <div style="flex: 1;"><span class="lbl">PAID</span><span class="fline"></span></div>
+      </div>
+      <div class="divider"></div>
+      <div class="foot"><span class="lbl">BUYER KEEPS THIS HALF</span><br>Show this stub at pickup &mdash; the item stays with the booth until this half comes back.</div>
+    </div>
+  </div>
+
+  <div class="tip">
+    <strong>Hold rules that keep the booth friendly:</strong> one held item per buyer, price agreed and written, a set return time, no long holds. Anything unclaimed when the show ends goes back on the table &mdash; your booth is not free storage.
+  </div>
+</body>
+</html>
